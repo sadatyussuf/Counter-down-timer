@@ -33,13 +33,32 @@ body{
     font-size: 60px;
     color: hsl(345, 95%, 68%) ;
     border-radius: 10px;
-
     /* list-style-position: inside; */
     /* text-decoration: line-through; */
     position: relative;
 	
 }
 
+.dot-left {
+    height: 14px;
+    width: 14px;
+    background-color: hsl(234, 17%, 12%);;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+    bottom: 40%;
+}
+.dot-right {
+    height: 14px;
+    width: 14px;
+    background-color: hsl(234, 17%, 12%);;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    bottom: 40%;
+}
 .div-box:before,
 .div-box:after {
     content: " ";
@@ -58,6 +77,8 @@ body{
 .nav{
     position: fixed; 
     bottom:0;
+    left: 10%;
+    margin-bottom: 50px;
 }
 .attribution { 
     margin-top: 20px;
@@ -66,6 +87,7 @@ body{
 
     position: fixed;
     bottom:0;
+    left: 10%;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
