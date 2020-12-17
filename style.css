@@ -1,0 +1,72 @@
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    background-color:hsl(234, 17%, 12%);
+    background-image: url(images/bg-stars.svg);
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color:  hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.div-container{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.div-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    /* grid-template-rows: 1fr; */
+}
+
+
+
+.div-box{
+    width: 110px;
+    height: 100px;
+    background-color: hsl(236, 21%, 26%);
+    border: 1px solid  hsl(236, 21%, 26%);
+    text-align: center;
+    font-size: 60px;
+    color: hsl(345, 95%, 68%) ;
+    border-radius: 10px;
+
+    /* list-style-position: inside; */
+    /* text-decoration: line-through; */
+    position: relative;
+	
+}
+
+.div-box:before,
+.div-box:after {
+    content: " ";
+    display: table;
+}
+.hill{
+
+    position: fixed;
+    left: 0; 
+    bottom:0;
+    background-image: url(images/pattern-hills.svg);
+    background-repeat: repeat-x;
+    height: 26vh;
+}
+
+.nav{
+    position: fixed; 
+    bottom:0;
+}
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+
+    position: fixed;
+    bottom:0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
