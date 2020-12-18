@@ -129,14 +129,14 @@ li a:hover{
         font-family: Lobster Two,cursive;
     }
     .tick{
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
 	.div-container{
-        width: 80%;
+        width: 90%;
         position: fixed;
-        transform: translate(-60%,-10%);
+        transform: translate(-51%,-10%);
     }
     .div-box{
-        width: 90%;
+        width: 100%;
     }
 }
