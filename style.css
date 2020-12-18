@@ -7,34 +7,49 @@ body{
     font-size: 14px;
     color:  hsl(0, 0%, 100%);
     font-weight: 700;
+
+}
+h1{
+    margin-top: 20vh; 
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Lobster Two,cursive;
 }
 .div-container{
     position: fixed;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-40%);
+    
 }
 
 .div-row{
+
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
-    /* grid-template-rows: 1fr; */
+    
 }
 
-
+span.text-muted{
+	color:  hsl(237, 18%, 59%);
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	font-size: 0.9em
+}
 
 .div-box{
-    width: 110px;
-    height: 100px;
+    /* width: 110px;
+    height: 100px; */
+
+    width: 7rem;
+    height: 7rem;
     background-color: hsl(236, 21%, 26%);
     border: 1px solid  hsl(236, 21%, 26%);
     text-align: center;
-    font-size: 60px;
+    font-size: 4.5rem;
     color: hsl(345, 95%, 68%) ;
     border-radius: 10px;
-    /* list-style-position: inside; */
-    /* text-decoration: line-through; */
     position: relative;
 	
 }
@@ -59,36 +74,60 @@ body{
     right: -10px;
     bottom: 40%;
 }
-.div-box:before,
-.div-box:after {
-    content: " ";
-    display: table;
-}
-.hill{
 
+footer{
     position: fixed;
-    left: 0; 
-    bottom:0;
+    bottom:0;  
     background-image: url(images/pattern-hills.svg);
     background-repeat: repeat-x;
+    background-position-x: 80%;
+    background-position-y: top;
+    background-size: cover;
+    width: 100%;
     height: 26vh;
 }
 
 .nav{
     position: fixed; 
-    bottom:0;
-    left: 10%;
-    margin-bottom: 50px;
+    bottom:5vh;
+    width: 100%;
+}
+
+li a:hover{
+    background-color:hsl(345, 95%, 68%) ;
 }
 .attribution { 
     margin-top: 20px;
     font-size: 11px;
     text-align: center;
-
-    position: fixed;
+    position:fixed;
     bottom:0;
-    left: 10%;
+    width: 100%;
+
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+#box.turn{
+    animation: turn 0.7s ease forwards;
+    
+}
+
+@keyframes turn{
+    0%{transform: rotateX(0deg)}
+
+    100%{transform: rotateX(360deg)}
+}
+
+@media only screen and (max-width: 400px) {
+	.div-container{
+        width: 80%;
+        position: fixed;
+        transform: translate(-50%,-40%);
+    }
+    .div-box{
+        width: 100%;
+    }
 }
