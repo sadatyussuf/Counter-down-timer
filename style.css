@@ -125,7 +125,7 @@ li a:hover{
 	.div-container{
         width: 80%;
         position: fixed;
-        transform: translate(-50%,-40%);
+        transform: translate(-60%,-50%);
     }
     .div-box{
         width: 100%;
