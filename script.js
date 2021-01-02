@@ -9,7 +9,7 @@ let day;
 let hr;
 let min;
 let sec;
-let newYear = new Date(2021,0,1,0,0,0).getTime();
+let newYear = new Date(2022,0,1,0,0,0).getTime();
 
 
 function animateclass(box){
@@ -20,8 +20,6 @@ setTimeout(function(){
 },700)
 
 }
-
-
 
 let test = setInterval(function(){
 
@@ -48,22 +46,13 @@ let test = setInterval(function(){
     if ( hr <= 9){hours.innerText = '0' + hr}
     if ( sec <= 9){seconds.innerText = '0' + sec}
 
-    let box = document.querySelectorAll('#box')
+    let box = document.querySelectorAll('.div-col div')
 
     animateclass(box[3]);
     if ( sec == 59 ){animateclass(box[2])}
     if ( sec == 59 && min == 59 ){animateclass(box[1])}
     if ( sec == 59 && min == 59 && hr == 23){animateclass(box[0])}
 
-
-    if (timeLeft<=0){
-    
-        
-        newYear = new Date(2021,6,22,0,0,0).getTime()
-        document.getElementById('header').innerHTML 
-        = 'MY BirThDay';
-    
-    }
 
 },1000)
 

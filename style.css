@@ -9,17 +9,31 @@ body{
     font-weight: 700;
 
 }
+*{
+    box-sizing: border-box;
+}
 h1{
-    margin-top: 20vh; 
+    margin-top: 3rem; 
     text-align: center;
     font-size: 2.5rem;
     font-family: Lobster Two,cursive;
 }
+.body-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+
 .div-container{
-    position: fixed;
+    margin-top: 6em;
+    /* position: fixed;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-40%);
+    transform: translate(-50%,-40%); */
     
 }
 
@@ -29,19 +43,19 @@ h1{
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
     
+    
 }
-
+.tick{
+    font-size: 3.5rem;
+}
 span.text-muted{
 	color:  hsl(237, 18%, 59%);
 	text-transform: uppercase;
-	letter-spacing: 0.4em;
-	font-size: 0.9em
+	letter-spacing: 0.4rem;
+	font-size: 0.9rem
 }
 
 .div-box{
-    /* width: 110px;
-    height: 100px; */
-
     width: 7rem;
     height: 7rem;
     background-color: hsl(236, 21%, 26%);
@@ -55,8 +69,8 @@ span.text-muted{
 }
 
 .dot-left {
-    height: 14px;
-    width: 14px;
+    height: 1rem;
+    width: 1rem;
     background-color: hsl(234, 17%, 12%);;
     border-radius: 50%;
     display: inline-block;
@@ -84,7 +98,7 @@ footer{
     background-position-y: top;
     background-size: cover;
     width: 100%;
-    height: 26vh;
+    height: 9rem;
 }
 
 .nav{
@@ -97,8 +111,8 @@ li a:hover{
     background-color:hsl(345, 95%, 68%) ;
 }
 .attribution { 
-    margin-top: 20px;
-    font-size: 11px;
+    margin-top: 2rem;
+    font-size: 0.5rem;
     text-align: center;
     position:fixed;
     bottom:0;
@@ -121,8 +135,26 @@ li a:hover{
     100%{transform: rotateX(360deg)}
 }
 
-@media only screen and (max-width: 400px) {
-    h1{
+@media only screen and (max-width: 440px) {
+    
+    .body-wrapper{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+    }
+    .div-container{
+        width: 100%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;  */
+
+    }
+    .div-box{
+        width:100%;
+    }
+    /* h1{
         margin-top: 10vh; 
         text-align: center;
         font-size: 1.5rem;
@@ -138,5 +170,5 @@ li a:hover{
     }
     .div-box{
         width: 100%;
-    }
+    } */
 }
